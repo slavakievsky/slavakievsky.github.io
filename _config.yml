@@ -56,3 +56,7 @@ sass:
   style: compressed
   load_paths:
     - _sass
+
+webmaster-verifications:
+  yandex: "b3343dd014595ec9"
+  google: "67EZUqegeXOgbNX7Vsl8urOoaBJwZKCkeC6tvYnH-9s"
