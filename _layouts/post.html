@@ -21,13 +21,16 @@ layout: page
     </div>
     <div class="post">
         <div class="post__text">
+            {%- assign len = page.tags | size -%}
+            {%- if len > 0 -%}
             Опубликовано с тэгами:
             {%- for tag in page.tags -%}
             <a class="category-preview" href="{{site.url}}{{site.baseurl}}categories/{{tag}}">{{tag}}</a>
             {%- endfor -%}
-            <a class="post__text post__wantfix" href="{{site.editurl}}/{{page.path}}">
-                Исправить/дополнить
-            </a>
+            {%- endif -%}
+            <div class="post__text post__wantfix">
+                <a href="{{site.editurl}}/{{page.path}}">Ты можешь исправить/дополнить этот материал</a>
+            </div>
         </div>
     </div>
 </div>
