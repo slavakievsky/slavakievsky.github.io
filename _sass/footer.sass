@@ -13,3 +13,11 @@
 
   &__game
     height: 350px
+    display: flex
+    justify-content: space-around
+    .game__canvas
+      visibility: visible
+
+@media screen and (max-width: $breakpoint1)
+  .footer__game .game__canvas
+    visibility: hidden
