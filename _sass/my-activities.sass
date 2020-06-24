@@ -1,0 +1,19 @@
+.activity
+  @extend %foreground-block
+  font-size: $text__size_base
+  margin-bottom: 15px
+  &__head
+    text-align: center
+    margin-bottom: 25px
+    color: $text__color_clickable
+    &_clickable
+      @extend %left-hovered-link
+      @extend %right-hovered-link
+      &::before,&::after
+        margin: 0 5px 0 10px
+
+.activity__container
+  grid-column: 9/13
+  padding-left: 25px
+  &_sticky
+    position: sticky

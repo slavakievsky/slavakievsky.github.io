@@ -1,0 +1,33 @@
+%hovered-with-arrow
+  display: inline-block
+  content: ""
+  height: 1.5rem
+  width: 2rem
+  background: no-repeat url("/assets/img/arrow.svg")
+  background-size: 1.5rem 1.5rem
+
+%foreground-block
+  background-color: $background__color_foreground
+  border: 1px solid $border__color_grey
+  border-radius: 3px
+
+%container
+  display: block
+  max-width: 1200px
+  margin-left: auto
+  margin-right: auto
+
+%left-hovered-link
+  &::before
+    @extend %hovered-with-arrow
+    opacity: 0
+  &:hover::before
+    opacity: 0.4
+
+%right-hovered-link
+  &::after
+    @extend %hovered-with-arrow
+    background-image: url("/assets/img/arrow-left.svg")
+    opacity: 0
+  &:hover::after
+    opacity: 0.4

@@ -1,0 +1,29 @@
+---
+layout: page
+title: Лента сайта
+---
+<div class="timeline">
+    {%- assign line = site.pets | concat: site.cases | concat: site.posts | sort: 'date' | reverse -%}
+    {%- for item in line -%}
+        {%- capture i18n_date -%}
+            {{ item.date | date: "%-d " }}
+            {%- assign m = item.date | date: "%-m" | minus: 1 -%}
+            {{ site.data.ru.months[m] }}
+            {{ item.date | date: "%Y" }}
+        {%- endcapture -%}
+        {%- capture marker -%}
+            {%- if item.collection == 'cases' -%}
+                <div class="element element__case">Case</div>
+            {%- elsif item.collection == 'pets' -%}
+                <div class="element element__pet">Pet</div>
+            {%- endif -%}
+        {%- endcapture -%}
+        <a class="timeline__element" href="{{item.url}}">
+            <div class="element__markerplace">
+                {{marker}}
+                <div class="element element__date">{{i18n_date}}</div>
+            </div>
+            <div class="element element__text">{{item.title}}</div>
+        </a>
+    {%- endfor -%}
+</div>

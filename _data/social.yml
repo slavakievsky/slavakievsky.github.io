@@ -1,0 +1,17 @@
+social_links:
+  - vk:
+    img: /assets/img/social-vk.webp
+    text: vk
+    url: https://vk.com/verekdesa
+  - github:
+    img: /assets/img/social-github.webp
+    text: github
+    url: https://github.com/pushsla
+  - habr:
+    img: /assets/img/social-freelance.webp
+    text: freelance
+    url: https://freelance.habr.com/freelancers/pushsla
+  - gmail:
+    img: /assets/img/social-gmail.webp
+    text: gmail
+    url: mailto:push2001sla@gmail.com

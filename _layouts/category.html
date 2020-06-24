@@ -1,0 +1,13 @@
+---
+layout: page
+---
+<div class="post__container container_full-width">
+    <div class="page__description">
+            {{content}}
+    </div>
+    {%- for post in site.posts -%}
+        {%- if post.tags contains page.category -%}
+            {%- include post-preview.html -%}
+        {%- endif -%}
+    {%- endfor -%}
+</div>

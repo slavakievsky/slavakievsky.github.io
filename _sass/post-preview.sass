@@ -1,0 +1,26 @@
+.post-preview
+  @extend %foreground-block
+  padding: 0 10px 0 10px
+  margin-bottom: 15px
+  font-size: $text__size_base
+  &__title
+    @extend %left-hovered-link
+    font: $text__size_big "Roboto"
+    color: $text__color_clickable
+    margin-bottom: 0
+    &::before
+      margin-left: -2.1rem
+    &_unarrowed
+      &::before
+        display: none
+  &__date
+    font: $text__size_base "Roboto Condensed Light"
+    color: $text__color_blue
+    margin: 0
+  &__read
+    color: $text__color_link
+  &_align-center
+    text-align: center
+
+.post-preview__container
+  grid-column: 1/9

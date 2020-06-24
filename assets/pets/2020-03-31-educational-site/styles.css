@@ -1,0 +1,11 @@
+html{font-family:"Open Sans",sans-serif;font-size:10px}body{background-color:#ccc}a{color:#0a0083}a:hover{text-decoration:none}.container,.header{background-color:#99ffb6;border-radius:2px;color:#0a0083;box-shadow:3px 3px 3px rgba(0,0,0,.25)}.header{background-color:#80ffa4}.header__name{font-size:2.2rem;font-color:#0a0083}.header__sign,.main__sheet__caption_undersigned{font-family:"Pacifico",sans-serif;font-size:2.2rem;text-align:right;color:#940000}.main{color:#0a0083}.main__sheet,.main__nav,.main__main{margin:1rem 0;padding:0 .5rem;font-size:1.8rem;background-color:#fff;border-radius:2px;box-shadow:2px 2px 2px rgba(0,0,0,.25);transition:all .1s}.main__sheet__caption{font-family:"Pacifico",sans-serif;font-size:1.8rem;text-align:center}.main__sheet__reference{display:block;text-decoration:underline}.main__sheet__reference:hover{text-decoration:underline}.main__sheet:hover,.main__nav:hover,.main__main:hover{transform:translate(-1px, -1px);box-shadow:4px 4px 4px rgba(0,0,0,.25);cursor:pointer}.main__main{min-height:100%;background-image:repeating-linear-gradient(0deg, transparent, transparent 19px, #AAE9FF 19px, #AAE9FF 20px),repeating-linear-gradient(-90deg, transparent, transparent 19px, #AAE9FF 19px, #AAE9FF 20px);background-size:20px 20px}.main__post{margin-top:1rem}.main__post__date{font-size:2.2rem;font-family:"Pacifico",sans-serif;color:#940000}.main__post__name{font-weight:bold}.main__nav{padding:1rem;display:inline-block;font-family:"Pacifico",sans-serif}.footer{padding:2rem 0 2rem 0}/*# sourceMappingURL=styles.css.map */
+@media (max-width: 1200px){
+    .main__sheet__reference{
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 991px){
+    .main__sheet__reference{
+        font-size: 1.3rem;
+    }
+}

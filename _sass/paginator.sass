@@ -1,0 +1,32 @@
+.paginator
+  display: flex
+  justify-content: space-between
+  margin-bottom: 15px
+  &__entries
+    align-self: center
+  &__entry
+    background-color: $background__color_foreground
+    border: 1px solid $border__color_grey
+    border-radius: 3px
+    padding: 5px 15px
+    font-size: $text__size_big
+    color: $text__color_clickable
+    &_prev
+      &::before
+        @extend %hovered-with-arrow
+        background-image: url("/assets/img/arrow-left.svg")
+        margin-right: 1.5rem
+      &_unavailable
+        color: $text__color_blue
+        &::before
+          opacity: 0.4
+    &_next
+      &::after
+        @extend %hovered-with-arrow
+        margin-left: 1.5rem
+      &_unavailable
+        color: $text__color_blue
+        &::after
+          opacity: 0.4
+    &_active
+      border-color: $text__color_accent

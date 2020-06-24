@@ -1,0 +1,36 @@
+.post
+  @extend %foreground-block
+  position: relative
+  background-color: $background__color_foreground
+  text-align: justify
+  margin-bottom: .5rem
+  padding: 1rem
+  &__text
+    display: inline-block
+    font-size: 1.6rem
+  &__wantfix
+    display: block
+    color: $text__color_head_post
+  h2,h3,h4
+    font: 2rem "Roboto Condensed"
+    color: $text__color_head_post
+  h2
+    font-size: 3.5rem
+  h3
+    font-size: 2.5rem
+  a img
+    border-color: $text__color_link
+    transition: all .2s
+    &:hover
+      transform: scale(1.01)
+  img
+    display: block
+    margin-left: auto
+    margin-right: auto
+    border: 1px solid $border__color_grey
+    border-radius: 3px
+
+.post__container
+  grid-column: 1/9
+.container_full-width
+  grid-column: 1/13

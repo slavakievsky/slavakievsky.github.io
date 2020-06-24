@@ -1,0 +1,12 @@
+.idea
+.ccls-cache
+cmake-build-debug
+
+.ipynb_checkpoints
+__pycache__
+
+.jekyll-metadata
+.jekyll-cache
+.sass-cache
+
+_site

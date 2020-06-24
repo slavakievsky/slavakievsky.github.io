@@ -1,0 +1,28 @@
+.pets__container
+  grid-column: 1/13
+  display: grid
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr))
+  .container
+    &__element
+      @extend %foreground-block
+      display: block
+      margin: 15px
+      padding: 1rem
+      transition: all .3s
+      &:hover
+        transform: scale(1.02)
+      .element
+        &__title
+          font: $text__size_head "Roboto Condensed"
+          color: $text__color_clickable
+          text-align: center
+        &__image
+          max-width: 100%
+          margin: .5rem auto
+          border: 1px solid $border__color_grey
+          border-radius: 3px
+        &__text
+          font-size: $text__size_description
+          text-align: justify
+          margin-top: 1rem
+          color: $text__color

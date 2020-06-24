@@ -1,0 +1,21 @@
+<div class="header-table">
+    <div class="table__h table__h_1"><a href="#">{{page.title}}</a></div>
+            {%- assign heads = page.content | split: '<h' -%}
+            {%- for head in heads -%}
+                {%- assign head_content = head | split: '</h' -%}
+                {%- assign head_val = head_content[0] | split: ">" -%}
+                {%- assign head_val = head_val[0] | slice: 0 -%}
+                {%- assign head_id = head_content[0] | split: 'id="' -%}
+                {%- assign head_name = head_id[1] | split: ">" -%}
+                {%- assign head_name = head_name[1] -%}
+                {%- assign head_id = head_id[1] | split: '"' -%}
+                {%- assign html_id = head_id[0] -%}
+                    <a href="#{{html_id}}">
+                        <div class="table__h table__h_{{head_val}}">
+                        {%- if head_name%}
+                            {{head_name}}
+                        {%- endif -%}
+                        </div>
+                    </a>
+            {%- endfor -%}
+</div>

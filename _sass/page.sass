@@ -1,0 +1,15 @@
+.page
+  &__container
+    @extend %container
+    display: grid
+    position: relative
+    grid-template-columns: repeat(12, 1fr)
+    grid-template-rows: repeat(3, auto)
+    padding: 75px 50px 0 50px
+  &__description
+    @extend %foreground-block
+    text-align: center
+    grid-column: 1/13
+    margin-bottom: 15px
+    font: $text__size_big "Roboto Condensed"
+    color: $text__color_clickable

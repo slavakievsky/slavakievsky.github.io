@@ -1,0 +1,17 @@
+{%- capture i18n_date -%}
+    {{post.date | date: "%-d "}}
+    {%- assign m = post.date | date: "%-m" | minus: 1 -%}
+    {{site.data.ru.months[m]}}
+    {{post.date | date: "%Y"}}
+{%- endcapture -%}
+<div class="post-preview">
+    <a class="arrowed-a" href="{{ post.url }}"><h3 class="post-preview__title">{{post.title}}</h3></a>
+    <div class="post-preview__date">{{i18n_date}}</div>
+    <br/>
+    {%- for tag in post.tags -%}
+    <a class="category-preview" href="{{site.url}}{{site.baseurl}}categories/{{tag}}">{{tag}}</a>
+    {%- endfor -%}
+    <br/>
+    {{ (post.excerpt | split: "</p>")[0]}}
+    <a class="post-preview__read" href="{{ post.url }}">читать далее</a>
+</div>

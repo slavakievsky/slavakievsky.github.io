@@ -1,0 +1,17 @@
+---
+layout: page
+title: Проекты
+---
+{%- assign pets = site.pets | reverse -%}
+<div class="page__description">
+    Пет-проекты на поиграться и потренировать различные навыки
+</div>
+<div class="pets__container">
+    {%- for pet in pets -%}
+        <a class="container__element" href="{{pet.url}}">
+            <div class="element__title">{{pet.title}}</div>
+            <div class="element__image"><img src="{{pet.preview}}" alt="{{pet.title}}"></div>
+            <div class="element__text">{{pet.description}}</div>
+        </a>
+    {%- endfor -%}
+</div>

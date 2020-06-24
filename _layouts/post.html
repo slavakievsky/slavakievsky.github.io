@@ -1,0 +1,33 @@
+---
+layout: page
+---
+<div class="post__container container_full-width">
+    {%- if page.collection == "posts" -%}
+        <div class="post">
+            <div class="post__text">
+                {{page.description}}
+            </div>
+        </div>
+    {%- endif -%}
+    <div class="post">
+        <div class="post__text">
+            {%- include header-table.html -%}
+        </div>
+    </div>
+    <div class="post">
+        <div class="post__text">
+            {{content}}
+        </div>
+    </div>
+    <div class="post">
+        <div class="post__text">
+            Опубликовано с тэгами:
+            {%- for tag in page.tags -%}
+            <a class="category-preview" href="{{site.url}}{{site.baseurl}}categories/{{tag}}">{{tag}}</a>
+            {%- endfor -%}
+            <a class="post__text post__wantfix" href="{{site.editurl}}/{{page.path}}">
+                Исправить/дополнить
+            </a>
+        </div>
+    </div>
+</div>

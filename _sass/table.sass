@@ -1,0 +1,17 @@
+table, th, td
+  border: 1px solid $table__color_border
+  border-collapse: collapse
+
+td
+  padding: .5rem 1rem
+  vertical-align: center
+
+tr
+  &:nth-child(1)
+    td
+      text-align: center
+      background-color: $table__color_head
+      color: $table__color_head_text
+      font-weight: bold
+  &:hover
+    background-color: $table__color_hover

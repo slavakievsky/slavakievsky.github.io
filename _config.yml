@@ -1,0 +1,58 @@
+title: "Pushk'a"
+description: "Заметки и гайды от программиста, верстальщика и линуксоида в одном флаконе"
+favicon: /favicon.ico
+url: https://pushsla.github.io
+editurl: https://github.com/pushsla/pushsla.github.io/blob/master
+baseurl: /
+lang: ru_RU
+
+collections:
+  posts:
+    output: true
+    permalink: /blog/:title/
+  cases:
+    output: true
+    permalink: /pets/:title/
+    sort_by: date
+  pets:
+    output: true
+    permalink: /pets/:title/
+    sort_by: date
+  drafts:
+    output: true
+    permalink: /drafts/:title/
+  categories:
+    output: true
+    permalink: /categories/:title/
+
+paginate: 4
+paginate_path: /blog/page:num
+
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: highlight
+    span:
+      line_numbers: false
+      block:
+        line_numbers: true
+        start_line: 1
+
+plugins:
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - _site
+  - .jekyll-metadata
+  - .jekyll-cache
+
+sass:
+  style: compressed
+  load_paths:
+    - _sass

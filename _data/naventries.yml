@@ -1,0 +1,21 @@
+sidebar_nav_entries:
+  - home:
+    text: Домашняя
+    url: /
+    match: /
+    available: true
+  - pets:
+    text: Проекты
+    url: /pets
+    match: /pets.html
+    available: true
+  - cases:
+    text: Кейсы
+    url: /cases
+    match: /cases.html
+    available: false
+  - timelime:
+    text: Лента
+    url: /timeline
+    match: /timeline.html
+    available: true
