@@ -1,4 +1,4 @@
-    <a href="{{site.url}}{{site.baseurl}}pets" class="activity activity__head activity__head_clickable">Последние ништячки</a>
+    <a href="{{site.url}}{{site.baseurl}}/pets" class="activity activity__head activity__head_clickable">Последние ништячки</a>
     {%- assign latest = site.cases | concat: site.pets | sort: 'date' | reverse | slice: 0,3 -%}
     {%- for ent in latest -%}
         <a class="activity activity__entry" href="{{ent.url}}">
