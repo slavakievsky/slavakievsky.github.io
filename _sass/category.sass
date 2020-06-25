@@ -1,6 +1,10 @@
 .category-preview
   display: inline-block
-  border: 2px solid $border__color_grey_real
+  border: 1px solid $border__color_grey_real
   border-radius: 3px
   margin-right: .6rem
   padding: .3rem .5rem
+
+@media (hover: none), (pointer: coarse)
+  .category-preview
+    border: 2px solid $border__color_grey_real
