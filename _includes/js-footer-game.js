@@ -20,7 +20,7 @@ let brickOffsetLeft = 30;
 let brickRowCount = (canvas.width-brickOffsetLeft*2)/(brickWidth+brickPadding);
 let brickColumnCount = 3;
 let color = "#1394CA";
-let drawing = true;
+let helling = true;
 
 let bricks = [];
 for(let c=0; c<brickColumnCount; c++) {
@@ -104,7 +104,8 @@ function drawBricks() {
       }
     }
   }
-  if (actives <= 1){
+  if (actives <= 1 && helling){
+      helling = false
         let query = new URL(window.location.href);
         if (query.searchParams.has("hell")) {
                 let link = document.createElement("link");
@@ -153,9 +154,7 @@ function draw() {
 
   x += dx;
   y += dy;
-  if (drawing) {
-      requestAnimationFrame(draw);
-  }
+  requestAnimationFrame(draw);
 }
 
 draw();
