@@ -1,6 +1,6 @@
-$header__height: 50px
+$header__height: 55px
 $header__height_touch: 6rem
-$header__height_pulldown: 61px
+$header__height_pulldown: 65px
 $header__z: 100
 $header__z_pulldown: 99
 
@@ -33,7 +33,7 @@ $header__z_pulldown: 99
   h1
     grid-column: 1/1
   &__nav
-    grid-column: 3/6
+    grid-column: 4/7
     display: flex
     justify-content: space-between
     align-items: center
@@ -60,14 +60,17 @@ $header__z_pulldown: 99
       width: 38px
       height: 38px
 
+@media screen and (max-width: $breakpoint2)
+  .header
+    &__nav
+      grid-column: 3/7
+
 @media screen and (max-width: $breakpoint3)
   .header__container
     padding: 0 1rem
   .header_pulldown
     h2
       font-size: 1.2rem
-  .header__nav
-    grid-column: 3/7
   .header__socials
     grid-column: 4/7
     img
@@ -77,7 +80,7 @@ $header__z_pulldown: 99
 @media (hover: none) and (pointer: coarse)
   .header
     height: $header__height_touch
-    border-bottom: 1px solid $border__color_skyblue
+    border-bottom: 2px solid $border__color_skyblue
     &_pulldown
       visibility: hidden
     &__socials
