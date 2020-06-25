@@ -77,16 +77,10 @@ $header__z_pulldown: 99
 
 @media (hover: none) and (pointer: coarse)
   .header
-    &::scroll(top: 12rem)
-      opacity: .5
     height: $header__height_touch
+    border-bottom: 1px solid $border__color_skyblue
     &_pulldown
-      height: $header__height_pulldown_touch
-      top: 0
-      &:hover
-        top: 0
-    &:hover + &_pulldown
-      top: 0
+      visibility: hidden
     &__socials
       grid-column: 4/6
       img
