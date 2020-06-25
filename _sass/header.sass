@@ -1,7 +1,7 @@
 $header__height: 50px
 $header__height_touch: 5rem
 $header__height_pulldown: 61px
-$header__height_pulldown_touch: 6.5rem
+$header__height_pulldown_touch: 6rem
 $header__z: 100
 $header__z_pulldown: 99
 
@@ -75,18 +75,18 @@ $header__z_pulldown: 99
       width: 34px
       height: 34px
 
-@media (hover: none) and (pointer: coarse)
+@media (hover: hover) and (pointer: fine) //(hover: none) and (pointer: coarse)
   .header
     &::scroll(top: 12rem)
       opacity: .5
     height: $header__height_touch
     &_pulldown
-      top: $header__height_touch
       height: $header__height_pulldown_touch
+      top: 0
       &:hover
-        top: $header__height_touch
+        top: 0
     &:hover + &_pulldown
-      top: $header__height_touch
+      top: 0
     &__socials
       grid-column: 4/6
       img
