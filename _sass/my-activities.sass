@@ -49,3 +49,12 @@
       padding-top: 2rem
       padding-bottom: 2rem
       text-align: center
+
+@media (hover: none) and (pointer: coarse)
+  .activity__container
+    .entry__container
+      grid-template-columns: 1fr
+  .activity
+    &__entry
+      text-align: left
+      font-size: $text__size_big
