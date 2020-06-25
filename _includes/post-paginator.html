@@ -2,7 +2,7 @@
     {%- include post-preview.html -%}
 {%- endfor -%}
 {%- if paginator.total_pages > 0 -%}
-<div class="paginator">
+<section class="paginator">
     {%- if paginator.previous_page -%}
     <a class="paginator__entry paginator__entry_prev"
        href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">Сюда</a>
@@ -11,7 +11,7 @@
     {%- endif -%}
     {%- assign start = paginator.page | minus: 2 -%}
     {%- assign end = paginator.page | plus: 2 -%}
-    <div class="paginator__entries">
+    <nav class="paginator__entries">
     {%- if start > 2 -%}
         {%- assign nstart = start | minus: 1 -%}
         <a class="paginator__entry"
@@ -38,12 +38,12 @@
         <a class="paginator__entry"
                href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', nend }}">...</a>
     {%- endif -%}
-    </div>
+    </nav>
     {%- if paginator.next_page -%}
     <a class="paginator__entry paginator__entry_next"
        href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Туда</a>
     {%- else -%}
     <span class="paginator__entry paginator__entry_next paginator__entry_next_unavailable">Туда</span>
     {%- endif -%}
-</div>
+</section>
 {%- endif -%}

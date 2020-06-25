@@ -4,9 +4,9 @@
     {{site.data.ru.months[m]}}
     {{post.date | date: "%Y"}}
 {%- endcapture -%}
-<div class="post-preview">
+<article class="post-preview">
     <a class="arrowed-a" href="{{ post.url }}"><h3 class="post-preview__title">{{post.title}}</h3></a>
-    <div class="post-preview__date">{{i18n_date}}</div>
+    <time class="post-preview__date">{{i18n_date}}</time>
     <br/>
     {%- for tag in post.tags -%}
     <a class="category-preview" href="{{site.url}}{{site.baseurl}}/categories/{{tag}}">{{tag}}</a>
@@ -14,4 +14,4 @@
     <br/>
     {{ (post.excerpt | split: "</p>")[0]}}
     <a class="post-preview__read" href="{{ post.url }}">читать далее</a>
-</div>
+</article>

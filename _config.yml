@@ -4,7 +4,8 @@ favicon: /favicon.ico
 url: https://pushsla.github.io
 editurl: https://github.com/pushsla/pushsla.github.io/blob/master
 baseurl: /
-lang: ru_RU
+lang: ru
+lang-utf: ru_RU
 
 
 
