@@ -6,6 +6,8 @@ editurl: https://github.com/pushsla/pushsla.github.io/blob/master
 baseurl: /
 lang: ru_RU
 
+
+
 collections:
   posts:
     output: true
@@ -28,9 +30,17 @@ collections:
 paginate: 4
 paginate_path: /blog/page:num
 
+feed:
+  collections:
+    - posts
+    - pets
+    - cases
+
 markdown: kramdown
 highlighter: rouge
 kramdown:
+  smart_quotes: apos,apos,quot,quot
+  typographic_symbols: {hellip: ...}
   input: GFM
   auto_ids: true
   syntax_highlighter: rouge
@@ -46,6 +56,7 @@ plugins:
   - jekyll-paginate
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-feed
 
 exclude:
   - _site

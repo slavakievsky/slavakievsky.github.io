@@ -2,8 +2,7 @@
 layout: post
 title: Персональный блог
 description: Статический сайт, содержащий персональный блог и портфолио. Опубликован на GitHub Pages. Создан с помощью фреймворка Jekyll.
-image: /assets/pets/2020-01-25-pushsla-github-io/image.jpg
-preview: /assets/pets/2020-01-25-pushsla-github-io/preview.webp
+image: /assets/pets/2020-01-25-pushsla-github-io/preview.webp
 ---
 
 ## Описание

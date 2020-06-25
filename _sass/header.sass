@@ -30,6 +30,7 @@ $header__z_pulldown: 99
     @extend %container
     display: grid
     grid-template-columns: repeat(6, 1fr)
+    padding-right: 1rem
   h1
     display: inline-block
     grid-column: 1/1
@@ -38,7 +39,6 @@ $header__z_pulldown: 99
     display: flex
     justify-content: space-between
     align-items: center
-    padding-right: 1rem
     .nav__entry
       @extend %left-hovered-link
       align-self: center
@@ -72,7 +72,7 @@ $header__z_pulldown: 99
   .nav_full-width
     grid-column: 1/7
   &__socials
-    grid-column: 3/5
+    grid-column: 5/7
     display: flex
     justify-content: space-between
     align-items: center
@@ -84,6 +84,8 @@ $header__z_pulldown: 99
   .header
     &__nav
       grid-column: 3/7
+    &__socials
+      grid-column: 4/7
 
 @media screen and (max-width: $breakpoint3)
   .header__container
@@ -93,9 +95,6 @@ $header__z_pulldown: 99
       font-size: 1.2rem
   .header__socials
     grid-column: 4/7
-    img
-      width: 34px
-      height: 34px
 
 @media (hover: none), (pointer: coarse)
   .header

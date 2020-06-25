@@ -2,7 +2,7 @@
 layout: embedded-case
 title: Шаблон странцы отчета о каллибровке
 description: Страница отчета о каллибровке приборов. CSS grid :)
-preview: /assets/pets/2020-04-10-test-layout/preview.webp
+image: /assets/pets/2020-04-10-test-layout/preview.webp
 ---
 
 <head>

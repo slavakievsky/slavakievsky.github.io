@@ -10,7 +10,7 @@ title: Проекты
     {%- for pet in pets -%}
         <a class="container__element" href="{{pet.url}}">
             <div class="element__title">{{pet.title}}</div>
-            <div class="element__image"><img src="{{pet.preview}}" alt="{{pet.title}}"></div>
+            <div class="element__image"><img src="{{pet.image}}" alt="{{pet.title}}"></div>
             <div class="element__text">{{pet.description}}</div>
         </a>
     {%- endfor -%}

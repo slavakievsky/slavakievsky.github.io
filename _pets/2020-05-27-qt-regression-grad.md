@@ -2,7 +2,7 @@
 layout: post
 title: Многомерная линейная регрессия
 description: Подключаемая библиотека Python для регрессионного анализа & графический PyQt5 интерфейс к ней.
-preview: /assets/pets/2020-05-27-qt-regression-grad/preview.webp
+image: /assets/pets/2020-05-27-qt-regression-grad/preview.webp
 ---
 
 ## Описание

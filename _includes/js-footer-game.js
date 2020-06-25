@@ -64,7 +64,7 @@ function collisionDetection() {
       let b = bricks[c][r];
       if(b.status == 1) {
         if(x > b.x && x < b.x+brickWidth && y > b.y && y < b.y+brickHeight) {
-          dy = -dy;
+          dy = -(dy*1.2);
           b.status = 0;
         }
       }
@@ -123,7 +123,10 @@ function draw() {
             x = X;
             y = Y;
             dy = -2;
-            dx = 1;
+            dx = Math.floor(Math.random() * Math.floor(4))-2;
+            if (dx == 0){
+                dx = 1;
+            }
         }
     }
 
