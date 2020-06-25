@@ -20,7 +20,9 @@ let brickOffsetLeft = 30;
 let brickRowCount = (canvas.width-brickOffsetLeft*2)/(brickWidth+brickPadding);
 let brickColumnCount = 3;
 let color = "#1394CA";
+
 let helling = true;
+let screaming = true;
 
 let bricks = [];
 for(let c=0; c<brickColumnCount; c++) {
@@ -104,19 +106,29 @@ function drawBricks() {
       }
     }
   }
-  if (actives <= 1 && helling){
+  if (actives === 3 && helling) {
       helling = false
-        let query = new URL(window.location.href);
-        if (query.searchParams.has("hell")) {
-                let link = document.createElement("link");
-                link.href = "/assets/styles/style-helluva.css"
-                link.type = "text/css";
-                link.rel = "stylesheet";
-                link.media = "screen,print";
-                link.id = "themeHELLUVA";
-                document.getElementsByTagName("head")[0].appendChild(link);
-        }
-    }
+      let query = new URL(window.location.href);
+      if (query.searchParams.has("hell")) {
+          let link = document.createElement("link");
+          link.href = "/assets/styles/style-helluva.css"
+          link.type = "text/css";
+          link.rel = "stylesheet";
+          link.media = "screen,print";
+          link.id = "themeHELLUVA";
+          document.getElementsByTagName("head")[0].appendChild(link);
+
+          link = document.createElement("img")
+          link.src="/assets/img/helluva/screamer.webp";
+          link.id = "gamescreamer";
+          link.style = "visibility: hidden;position: fixed; top: 0;"
+          document.getElementsByTagName("body")[0].appendChild(link);
+      }
+  } else if (actives === 0 && screaming){
+      screaming = false;
+      let screamer = document.getElementById("gamescreamer");
+      screamer.style = "visibility: visible;position: fixed; top:0;"
+  }
 }
 
 function draw() {
