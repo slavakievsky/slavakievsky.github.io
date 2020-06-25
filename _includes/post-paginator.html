@@ -7,7 +7,7 @@
     <a class="paginator__entry paginator__entry_prev"
        href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">Сюда</a>
     {%- else -%}
-    <span class="paginator__entry paginator__entry_prev paginator__entry_prev_unavailable">Не сюда</span>
+    <span class="paginator__entry paginator__entry_prev paginator__entry_prev_unavailable">Сюда</span>
     {%- endif -%}
     {%- assign start = paginator.page | minus: 2 -%}
     {%- assign end = paginator.page | plus: 2 -%}
@@ -43,7 +43,7 @@
     <a class="paginator__entry paginator__entry_next"
        href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Туда</a>
     {%- else -%}
-    <span class="paginator__entry paginator__entry_next paginator__entry_next_unavailable">Не туда</span>
+    <span class="paginator__entry paginator__entry_next paginator__entry_next_unavailable">Туда</span>
     {%- endif -%}
 </div>
 {%- endif -%}
