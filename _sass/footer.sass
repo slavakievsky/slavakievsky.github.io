@@ -1,7 +1,7 @@
 .footer
   background-color: $background__color_dark
   &__head
-    height: 60px
+    height: 8rem
     border-bottom: 1px solid $border__color_skyblue
     text-align: center
   &__advertisment
@@ -10,21 +10,32 @@
   &__copyright
     color: $text__color_dark
     font-size: 1.2rem
+  &__socials
+    display: flex
+    justify-content: center
+    align-items: center
+    img
+      margin: 1rem
+      height: 28px
+      width: 28px
+      filter: invert(40%) grayscale(100%) brightness(65%) sepia(100%) hue-rotate(-50deg) saturate(400%) contrast(1)
+      &:hover
+        filter: invert(40%) grayscale(100%) brightness(57%) sepia(100%) hue-rotate(-50deg) saturate(400%) contrast(1.2)
 
   &__game
     height: 350px
     display: flex
     justify-content: space-around
     .game__canvas
-      visibility: visible
+      display: block
 
 @media screen and (max-width: $breakpoint1)
-  .footer__game .game__canvas
-    visibility: hidden
+  .footer__game
+    display: none
 
 @media (hover: none), (pointer: coarse)
   .footer
     &__head
       border: none
-  .footer__game .game__canvas
-    visibility: hidden
+  .footer__game
+    display: none

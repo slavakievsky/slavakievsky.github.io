@@ -2,7 +2,7 @@
     <div class="footer__head">
         <div class="footer__advertisment">Хочешь такой же прикольный сайт? Есть бомбическая идея? Пиши мне!</div>
         <div class="footer__copyright">
-            © since {{ "now" | date: "%Y"}} <address>Pushkarev Svyatoslav</address> <address>push2001sla@gmail.com</address><br/>
+            © since {{ "now" | date: "%Y"}} <address>Pushkarev Svyatoslav</address> <address>push2001sla@gmail.com</address>
             Source code and original materials are under the MIT license
         </div>
     </div>
@@ -11,5 +11,10 @@
         <script async>
             {%- include js-footer-game.js -%}
         </script>
+    </div>
+    <div class="footer__socials">
+        {%- for link in site.data.social.social_links -%}
+        <a href="{{link.url}}"><img src="{{link.img}}" alt="{{link.text}}"></a>
+        {%- endfor -%}
     </div>
 </footer>
