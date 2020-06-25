@@ -37,6 +37,7 @@ $header__z_pulldown: 99
     display: flex
     justify-content: space-between
     align-items: center
+    padding-right: 1rem
     .nav__entry
       @extend %left-hovered-link
       align-self: center
@@ -95,7 +96,7 @@ $header__z_pulldown: 99
       width: 34px
       height: 34px
 
-@media (hover: none) and (pointer: coarse)
+@media (hover: none), (pointer: coarse)
   .header
     height: $header__height_touch
     border-bottom: 2px solid $border__color_skyblue
@@ -108,7 +109,6 @@ $header__z_pulldown: 99
         height: 4rem
     &__nav
       flex-direction: row-reverse
-      padding-right: 1rem
       .nav__entry
         @include hrefbutton
         display: none

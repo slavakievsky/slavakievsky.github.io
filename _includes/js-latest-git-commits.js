@@ -10,9 +10,9 @@
     for(let i = 0; i < 3; i++){
         let tag = "";
         try {
-            tag = `<a href=${data[i].html_url}>${data[i].full_name}</a>`;
+            tag = `<a class="activity activity__entry" href=${data[i].html_url}>${data[i].full_name}</a>`;
         }catch(e){
-            tag = `<a href=${fallbacks[i]["html_url"]}>${fallbacks[i]["full_name"]}</a>`
+            tag = `<a class="activity activity__entry" href=${fallbacks[i]["html_url"]}>${fallbacks[i]["full_name"]}</a>`
         }
         let target = document.getElementById(`gitactivity${i}`);
         target.innerHTML = tag;

@@ -32,7 +32,13 @@
     &::before, &::after
       margin: 0
 
-@media screen and (max-width: $breakpoint3), (hover: none) and (pointer: coarse)
+@media screen and (max-width: $breakpoint2)
+  .activity
+    &__head
+      &_clickable
+        padding: .5reme
+
+@media screen and (max-width: $breakpoint3), (hover: none), (pointer: coarse)
   .activity__container
     grid-row: 2/3
     grid-column: 1/13
@@ -44,8 +50,6 @@
   .activity
     &__head
       font-size: $text__size_big
-      &_clickable
-        padding: .5rem 1.5rem
     &__entry
       margin: .4rem
       padding-top: 2rem
