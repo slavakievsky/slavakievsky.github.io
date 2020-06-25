@@ -5,7 +5,7 @@
     position: relative
     grid-template-columns: repeat(12, 1fr)
     grid-template-rows: repeat(3, auto)
-    padding: 75px 50px 0 50px
+    padding: 75px 25px 0 25px
   &__description
     @extend %foreground-block
     text-align: center
@@ -17,6 +17,9 @@
 @media screen and (max-width: $breakpoint2)
   .page__container
     padding: 75px 15px 0 15px
+@media screen and (max-width: $breakpoint3)
+  .page__container
+    padding: 75px 0 0 0
 @media (hover: none), (pointer: coarse)
   .page__container
     padding: 12rem 5px
