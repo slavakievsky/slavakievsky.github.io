@@ -63,11 +63,10 @@ $header__z_pulldown: 99
     top: 0
     position: fixed
     background-color: $background__color_foreground
+    border-bottom: 2px solid $border__color_skyblue
     padding: .7rem 0
     width: 100%
     right: 0
-    opacity: 0
-    transition: all .3s ease
   .nav_full-width
     grid-column: 1/7
   &__socials
@@ -96,7 +95,7 @@ $header__z_pulldown: 99
       width: 34px
       height: 34px
 
-@media (hover: none) and (pointer: coarse)
+@media (hover: hover) and (pointer: fine)
   .header
     height: $header__height_touch
     border-bottom: 2px solid $border__color_skyblue
@@ -108,9 +107,11 @@ $header__z_pulldown: 99
         width: 4rem
         height: 4rem
     &__nav
+      flex-direction: row-reverse
+      padding-right: 1rem
       .nav__entry
         @include hrefbutton
-        visibility: hidden
+        display: none
         width: 0
         padding: 1rem
         &::before
@@ -122,14 +123,13 @@ $header__z_pulldown: 99
         background-image: url("/assets/img/menu.png")
         background-size: 4rem 4rem
     .nav_menu
-      display: flex
+      display: none
       justify-content: space-around
       .nav__entry
-        visibility: visible
+        display: inline-block
         min-width: 10rem
         text-align: center
-        opacity: inherit
 
 .menu__checkbox:checked ~ .nav_menu
-  opacity: 1
+  display: flex
   top: $header__height_touch
