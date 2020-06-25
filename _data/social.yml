@@ -15,3 +15,7 @@ social_links:
     img: /assets/img/social-gmail.webp
     text: gmail
     url: mailto:push2001sla@gmail.com
+  - rss:
+    img: /assets/img/social-rss.webp
+    text: rss
+    url: /feed.xml
