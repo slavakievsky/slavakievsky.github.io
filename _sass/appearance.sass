@@ -12,12 +12,14 @@ $text__color_head_post: #346899
 $code__color_background: #2f343f
 $code__color_text: #c6c6c6
 $code__text_size: 1.6rem
-$code__text_font: "Ronoto"
+$code__text_font: "Roboto", sans-serif
 
 $text__size_html: 65% //10px
+$text__size_html_touchscreen: 80%
 $text__size_base: 1.7rem
 $text__size_nav: 2rem
 $text__size_big: 2.5rem
+$text__size_big_touchscreen: 3.5rem
 $text__size_description: 1.5rem
 $text__size_copyright: 1.2rem
 $text__size_head: 2rem
@@ -37,25 +39,4 @@ $table__color_head_text: #ededed
 $breakpoint1: 1033px
 $breakpoint2: 944px
 $breakpoint3: 869px
-
-h1
-  font-size: 4.8rem
-  margin: 0
-  color: $text__color_head1
-h2, h3, h4, h5
-  font: $text__size_description "Roboto Condensed", sans-serif
-  color: $text__color_head1
-
-html
-  margin: 0
-  padding: 0
-  font: $text__size_html "Roboto", sans-serif
-  background-color: $background__color
-body
-  padding: 0
-  margin: 0
-a
-  text-decoration: none
-  color: $text__color_link
-img
-  max-width: 100%
+$breakpoint_touch: (hover: hover) and (pointer: fine)

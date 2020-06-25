@@ -30,3 +30,9 @@
           opacity: 0.4
     &_active
       border-color: $text__color_accent
+
+@media screen and (max-width: $breakpoint3), (hover: none) and (pointer: coarse)
+  .paginator
+    &__entry
+      font-size: $text__size_big_touchscreen
+      padding: .5rem 1.5rem

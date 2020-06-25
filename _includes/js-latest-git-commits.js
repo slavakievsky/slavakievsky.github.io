@@ -14,10 +14,7 @@
         }catch(e){
             tag = `<a href=${fallbacks[i]["html_url"]}>${fallbacks[i]["full_name"]}</a>`
         }
-        let target = document.getElementById(   `gitactivity${i}`);
+        let target = document.getElementById(`gitactivity${i}`);
         target.innerHTML = tag;
     }
 </script>
-<noscript>
-
-</noscript>

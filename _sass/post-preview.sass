@@ -1,5 +1,6 @@
 .post-preview
   @extend %foreground-block
+  display: block
   padding: 0 10px 0 10px
   margin-bottom: 15px
   font-size: $text__size_base
@@ -24,6 +25,13 @@
 .post-preview__container
   grid-column: 1/9
 
-@media screen and (max-width: $breakpoint3)
+@media screen and (max-width: $breakpoint3), (hover: none) and (pointer: coarse)
   .post-preview__container
     grid-column: 1/13
+  .post-preview
+    &__title
+      display: inline-block
+      margin: .5rem
+      font-size: $text__size_big_touchscreen
+      &::before
+        content: none
