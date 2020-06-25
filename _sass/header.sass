@@ -17,7 +17,7 @@ $header__z_pulldown: 99
     height: $header__height_pulldown
     margin-top: -1px
     border-bottom: 1px solid $border__color_skyblue
-    transition: all 0.3s ease
+    transition: all .3s ease
     h2
       grid-column: 1/3
       max-width: 310px
@@ -51,6 +51,25 @@ $header__z_pulldown: 99
     .inactive_entry
       &:hover::before
         opacity: 0
+    .nav__button
+      cursor: pointer
+      width: 0
+      height: 0
+      display: none
+      .menu__checkbox
+        visibility: hidden
+  .nav_menu
+    display: none
+    top: 0
+    position: fixed
+    background-color: $background__color_foreground
+    padding: .7rem 0
+    width: 100%
+    right: 0
+    opacity: 0
+    transition: all .3s ease
+  .nav_full-width
+    grid-column: 1/7
   &__socials
     grid-column: 3/5
     display: flex
@@ -82,16 +101,35 @@ $header__z_pulldown: 99
     height: $header__height_touch
     border-bottom: 2px solid $border__color_skyblue
     &_pulldown
-      visibility: hidden
+      display: none
     &__socials
       grid-column: 4/6
       img
         width: 4rem
         height: 4rem
     &__nav
-      grid-column: 2/7
       .nav__entry
         @include hrefbutton
+        visibility: hidden
+        width: 0
         padding: 1rem
         &::before
           content: none
+      .nav__button
+        display: inline-block
+        width: 4rem
+        height: 4rem
+        background-image: url("/assets/img/menu.png")
+        background-size: 4rem 4rem
+    .nav_menu
+      display: flex
+      justify-content: space-around
+      .nav__entry
+        visibility: visible
+        min-width: 10rem
+        text-align: center
+        opacity: inherit
+
+.menu__checkbox:checked ~ .nav_menu
+  opacity: 1
+  top: $header__height_touch

@@ -1,8 +1,5 @@
-    <div class="header">
-        <div class="header__container">
-            <a href="/"><h1>{{site.title}}</h1></a>
-            <div class="header__nav">
-                {%- for navlink in site.data.naventries.sidebar_nav_entries -%}
+{%- capture naventries -%}
+{%- for navlink in site.data.naventries.sidebar_nav_entries -%}
                     {%- if navlink.available -%}
                         {%- if page.url == navlink.match -%}
                             <a href="{{navlink.url}}" class="nav__entry active_entry arrowed-a">{{navlink.text}}</a>
@@ -13,6 +10,19 @@
                         <span class="nav__entry inactive_entry">{{navlink.text}}</span>
                     {%- endif -%}
                 {%- endfor -%}
+{%- endcapture -%}
+
+<div class="header">
+        <div class="header__container">
+            <a href="/"><h1>{{site.title}}</h1></a>
+            <div class="header__nav">
+                {{naventries}}
+                <label class="nav__button">
+                    <input id="menucheckbox0" class="menu__checkbox" type="checkbox">
+                    <div class="header__nav nav_menu">
+                        {{naventries}}
+                    </div>
+                </label>
             </div>
         </div>
     </div>

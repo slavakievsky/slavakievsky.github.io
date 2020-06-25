@@ -39,6 +39,8 @@
     padding-left: 0
     .entry__container
       grid-template-columns: repeat(auto-fit, minmax(200px, .5fr))
+    .container_touch-uncollapsible
+      grid-template-columns: 1fr
   .activity
     &__head
       font-size: $text__size_big
@@ -49,12 +51,3 @@
       padding-top: 2rem
       padding-bottom: 2rem
       text-align: center
-
-@media (hover: none) and (pointer: coarse)
-  .activity__container
-    .entry__container .container_touch-uncollapsible
-      grid-template-columns: 1fr
-  .activity
-    &__entry
-      text-align: left
-      font-size: $text__size_big
