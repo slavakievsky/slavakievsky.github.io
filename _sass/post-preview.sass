@@ -6,15 +6,21 @@
   font-size: $text__size_base
   &__title
     @extend %left-hovered-link
+    display: inline-block
     font-size: $text__size_big
     color: $text__color_clickable
     margin-bottom: 0
+    margin-left: -2rem
+    padding-left: 2rem
+    background-color: $table__color_head
+    border-radius: 3px
     &::before
       margin-left: -2.1rem
     &_unarrowed
       &::before
         display: none
   &__date
+    display: block
     font: $text__size_base "Roboto Condensed Light", sans-serif
     color: $text__color_blue
     margin: 0
