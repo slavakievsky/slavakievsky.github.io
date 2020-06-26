@@ -16,14 +16,21 @@
   h2,h3,h4
     font-size: 2rem
     color: $text__color_head_post
+    margin-top: 0
+    margin-bottom: .5rem
+    &::before
+      content: ""
+      height: $header__height_touch
+      display: block
+      width: 115%
   h2
     display: inline-block
-    background-color: $table__color_head
-    margin-left: -2rem
-    padding-left: 2rem
-    padding-right: .3rem
-    border-radius: 3px
     font-size: 3.5rem
+    padding-right: 1rem
+    background-color: $table__color_hover
+    border-radius: 3px
+    &::before
+      background-color: $background__color_foreground
   h3
     font-size: 2.5rem
   a img
