@@ -17,20 +17,9 @@
     font-size: 2rem
     color: $text__color_head_post
     margin-top: 0
-    margin-bottom: .5rem
-    &::before
-      content: ""
-      height: $header__height_touch
-      display: block
-      width: 115%
+    padding-top: $header__height_touch
   h2
-    display: inline-block
     font-size: 3.5rem
-    padding-right: 1rem
-    background-color: $table__color_hover
-    border-radius: 3px
-    &::before
-      background-color: $background__color_foreground
   h3
     font-size: 2.5rem
   a img
@@ -46,7 +35,10 @@
     border-radius: 3px
 
 .post__container
-  grid-column: 1/9
-  max-width: 100%
-.container_full-width
   grid-column: 1/13
+  max-width: 100%
+
+@media screen and (max-width: $breakpoint3), (hover: none), (pointer: coarse)
+  .post
+    h2
+      background-color: inherit
