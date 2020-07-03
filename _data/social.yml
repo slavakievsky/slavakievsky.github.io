@@ -1,8 +1,4 @@
 social_links:
-  - vk:
-    img: /assets/img/social-vk.webp
-    text: vk
-    url: https://vk.com/verekdesa
   - github:
     img: /assets/img/social-github.webp
     text: github
