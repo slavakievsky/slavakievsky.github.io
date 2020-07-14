@@ -2,3 +2,15 @@
 layout: page
 title: Рабочие кейсы
 ---
+<div class="page__description">
+    Успешно завершённые проекты, разбитые по категориям
+</div>
+<div class="pets__container">
+    {%- for cat in site.case-categories -%}
+        <a class="container__element" href="{{cat.url}}">
+            <div class="element__title">{{cat.title}}</div>
+            <div class="element__image"><img src="{{cat.image}}" alt="{{cat.title}}"></div>
+            <div class="element__text">{{cat.description}}</div>
+        </a>
+    {%- endfor -%}
+</div>

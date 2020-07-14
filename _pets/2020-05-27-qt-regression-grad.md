@@ -2,14 +2,14 @@
 layout: post
 title: Многомерная линейная регрессия
 description: Подключаемая библиотека Python для регрессионного анализа & графический PyQt5 интерфейс к ней.
-image: /assets/pets/2020-05-27-qt-regression-grad/preview.webp
+image: /assets/pets/2020-05-27-qt-regression-grad/preview.jpg
 ---
 
 ## Описание
 Проект представляет собой мини-библиотеку Python3, предназначенную для решения задач прогнозирования, предсказания и выявления зависимостей методом линейной регрессии.
 Система способна работать с достаточно большим количеством примеров (1000-100000), имеющих достаточно большое (100-1000) число признаков.
 
-![preview](/assets/pets/2020-05-27-qt-regression-grad/preview.webp)
+![preview](/assets/pets/2020-05-27-qt-regression-grad/preview.jpg)
 
 Также реализована функциональная программа с графическим интерфейсом.
 
@@ -25,9 +25,9 @@ image: /assets/pets/2020-05-27-qt-regression-grad/preview.webp
 ### Внешности
 Функциональная программа с графическим интерфейсом PyQt5 предоставляет возможности конфигурирования регрессии, выбора метода оптимизации и изменения его параметров, выбора данных для анализа, обучения модели и просмотра результата.
 
-![chose regression model options](/assets/pets/2020-05-27-qt-regression-grad/interface0.webp)
+![chose regression model options](/assets/pets/2020-05-27-qt-regression-grad/interface0.jpg)
 
-![train regression model](/assets/pets/2020-05-27-qt-regression-grad/interface1.webp)
+![train regression model](/assets/pets/2020-05-27-qt-regression-grad/interface1.jpg)
 
 На картинках выше видно, как регерссионная модель приблизила красную плоскость к синим точкам примеров. В данном случае мы имеем дело с данными, в которых необходимо выявить зависимость одного значения (предикторного) от двух других (признаковых). Видно, что модель хорошо справилась с задачей.
 
@@ -38,15 +38,15 @@ image: /assets/pets/2020-05-27-qt-regression-grad/preview.webp
 
 Процесс взаимодействия пользователя с программой, реализующей возможности разработанной библиотеки, отображён на следующей диаграмме:
 
-![user action with regression interface](/assets/pets/2020-05-27-qt-regression-grad/uml-action.webp)
+![user action with regression interface](/assets/pets/2020-05-27-qt-regression-grad/uml-action.jpg)
 
 Внутренная логика (регрессия, оптимизация и яже с ними) представлена двумя модулями: _Frontend_ и _Backend_, внутри которых реализованы соответствующие классы:
 
-![backend classes uml diagram](/assets/pets/2020-05-27-qt-regression-grad/uml-backend.webp)
+![backend classes uml diagram](/assets/pets/2020-05-27-qt-regression-grad/uml-backend.jpg)
 
-![frontend classed uml diagram](/assets/pets/2020-05-27-qt-regression-grad/uml-frontend.webp)
+![frontend classed uml diagram](/assets/pets/2020-05-27-qt-regression-grad/uml-frontend.jpg)
 
-![class interaction uml diagram](/assets/pets/2020-05-27-qt-regression-grad/uml-classes.webp)
+![class interaction uml diagram](/assets/pets/2020-05-27-qt-regression-grad/uml-classes.jpg)
 
 #### Математика
 В общем и целом алгоритм работы регрессионной модели достаточно прост и изящен: в начале процесса обучения модель только получает входной датасет с $M$ примерами, у каждого из которых $N$ признаков и одно предсказываемое значение. Далее создается случайный вектор $\vec{W}$ размера $N$. Затем в цикле некоторое количество раз выполняется следующая операция:

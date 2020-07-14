@@ -15,8 +15,11 @@ collections:
     permalink: /blog/:title/
   cases:
     output: true
-    permalink: /pets/:title/
+    permalink: /cases/:title/
     sort_by: date
+  case-categories:
+    output: true
+    permalink: /case-categories/:title/
   pets:
     output: true
     permalink: /pets/:title/

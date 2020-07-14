@@ -13,7 +13,7 @@ sidebar_nav_entries:
     text: Кейсы
     url: /cases
     match: /cases.html
-    available: false
+    available: true
   - timelime:
     text: Лента
     url: /timeline

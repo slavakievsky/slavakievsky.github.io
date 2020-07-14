@@ -2,7 +2,7 @@
 layout: embedded-case
 title: Шаблон посадочной страницы магазина цветов
 description: Шаблон посадочной страницы цветочного магазина. Адаптивный дизайн, и никаких bootstrap'ов.
-image: /assets/pets/2020-04-04-flower-shop/preview.webp
+image: /assets/pets/2020-04-04-flower-shop/preview.jpg
 ---
 <head>
     <meta charset="UTF-8">

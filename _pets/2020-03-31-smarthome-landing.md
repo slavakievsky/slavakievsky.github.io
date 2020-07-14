@@ -2,7 +2,7 @@
 layout: embedded-case
 title: Шаблон посадочной страницы продажи умного дома
 description: Шаблон посадочной страницы умного дома. Адаптивный интерфейс. Макет hello.afrian@gmail.com.
-image: /assets/pets/2020-03-31-smarthome-landing/preview.webp
+image: /assets/pets/2020-03-31-smarthome-landing/preview.jpg
 ---
 <head>
     <meta charset="UTF-8"/>

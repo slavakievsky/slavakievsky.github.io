@@ -1,13 +1,13 @@
 social_links:
   - github:
-    img: /assets/img/social-github.webp
+    img: /assets/img/social-github.png
     text: github
     url: https://github.com/pushsla
   - habr:
-    img: /assets/img/social-freelance.webp
+    img: /assets/img/social-freelance.png
     text: freelance
     url: https://freelance.habr.com/freelancers/pushsla
   - rss:
-    img: /assets/img/social-rss.webp
+    img: /assets/img/social-rss.png
     text: rss
     url: /feed.xml

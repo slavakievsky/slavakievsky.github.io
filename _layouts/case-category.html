@@ -1,0 +1,23 @@
+---
+layout: page
+---
+{%- assign cases = site.cases | reverse -%}
+<div class="post__container container_full-width">
+    <div class="page__description">
+            {{content}}
+    </div>
+    <div class="pets__container">
+        {%- for case in cases -%}
+            {%- if case.categories contains page.category -%}
+            {%- if case.no-display -%}
+            {%- else -%}
+            <a class="container__element" href="{{case.url}}">
+                <div class="element__title">{{case.title}}</div>
+                <div class="element__image"><img src="{{case.image}}" alt="{{case.title}}"></div>
+                <div class="element__text">{{case.description}}</div>
+            </a>
+            {%- endif -%}
+            {%- endif -%}
+        {%- endfor -%}
+    </div>
+</div>

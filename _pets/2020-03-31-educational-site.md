@@ -2,7 +2,7 @@
 layout: embedded-case
 title: Шаблон новостного образовательного портала
 description: Шаблон новостного портала для образовательной организации. Яркий и непринужденный, немного детский material design. Адаптивный интерфейс. 
-image: /assets/pets/2020-03-31-educational-site/preview.webp
+image: /assets/pets/2020-03-31-educational-site/preview.jpg
 ---
 <head>
     <meta itemprop="description" name="description" content="{%- if page.description -%}{{ page.description | truncate: 160 }}{%- else -%}{{ site.description | truncate: 160  }}{%- endif -%}" />
