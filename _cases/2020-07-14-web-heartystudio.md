@@ -3,6 +3,7 @@ layout: post
 title: Создание темы и структуры WordPress для HeartyStudio
 description: Требовалось сверстать и разместить в системе wordpress структуру сайта HeartyStudio, настроить блок статей и форму регистрации.
 categories: [wordpress,web,layout]
+image: /assets/cases/2020-07-14-web-heartystudio/preview.jpg
 ---
 ## ТЗ
 Заказчик предоставил макет страниц в Figma. Требовалось адаптивно сверстать все страницы и реализовать задуманный функционал с помощью WP.
