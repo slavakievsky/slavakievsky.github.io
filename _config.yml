@@ -1,8 +1,8 @@
-title: "Pushk'a"
-description: "Заметки и гайды от программиста, верстальщика и линуксоида в одном флаконе"
+title: "Slava Kievsky"
+description: "Персональный блог и портфолио Славы Киевского"
 favicon: /favicon.ico
-url: https://pushsla.github.io
-editurl: https://github.com/pushsla/pushsla.github.io/blob/master
+url: https://slavakievsky.github.io
+editurl: https://github.com/slavakievsky/slavakievsky.github.io/blob/master
 baseurl: /
 lang: ru
 lang-utf: ru_RU
