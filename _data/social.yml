@@ -1,4 +1,8 @@
 social_links:
+  - vk:
+    img: /assets/img/social-vk.png
+    text: vk.com
+    url: https://vk.com/anyprog
   - github:
     img: /assets/img/social-github.png
     text: github
