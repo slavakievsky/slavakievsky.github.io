@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/pets/2020-10-23-pikadu/css/style.css">
+    <link rel="stylesheet" href="/assets/pets/2020-10-23-pikadu/css/normalize.css">
+</head>
+
+<body class="_page">
+    <header class="header">
+        <div class="header__wrapper wrapper">
+            <a href="/" class="header__logo">
+                <img src="/assets/pets/2020-10-23-pikadu/img/logo.svg" alt="Pikadu" class="header__logo">
+            </a>
+            <nav class="header__nav">
+                <ui class="header__menu">
+                    <li class="menu__item"><a href="#" class="menu__link">Свежее</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Лучшее</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Горячее</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Подпсики</a></li>
+                </ui>
+            </nav>
+            <div class="header__search input-group">
+                <input type="search" class="search__input" placeholder="Поиск по сайту">
+                <button class="search__button">
+                    <img src="/assets/pets/2020-10-23-pikadu/img/search.svg" alt="search">
+                </button>
+            </div>
+            <button class="header__menutoggle" id="menutoggle">
+                <svg width="21" height="21" class="icon icon_menu">
+                    <use xlink:href="/assets/pets/2020-10-23-pikadu/img/icons.svg#menu"></use>
+                </svg>
+            </button>
+        </div>
+    </header>
+    <div class="content wrapper">
+        <main class="writepost">
+            <form action="form-publish-post">
+                <textarea class="writepost__text writepost__header" name="post-header" id="post-header" cols="30" rows="1" placeholder="Заголовок поста"></textarea>
+                <textarea class="writepost__text writepost__body" name="post-body" id="post-body" cols="30" rows="10" placeholder="Текст вашего поста"></textarea>
+                <div class="writepost__buttons">
+                    <button type="submit" class="publish-post">
+                        <svg width="17" height="19" class="publish-post__icon">
+                            <use xlink:href="/assets/pets/2020-10-23-pikadu/img/icons.svg#igni"></use>
+                        </svg>
+                        <span class="publish-post__text">Опубликовать пост</span>
+                    </button>
+                    <button class="photo secondary">
+                        <svg width="17" height="19" class="secondary__icon">
+                            <use xlink:href="/assets/pets/2020-10-23-pikadu/img/icons.svg#video"></use>
+                        </svg>
+                        <span class="photo__text">Видео</span>
+                    </button>
+                    <button class="video secondary">
+                        <svg width="17" height="19" class="secondary__icon">
+                            <use xlink:href="/assets/pets/2020-10-23-pikadu/img/icons.svg#photo"></use>
+                        </svg>
+                        <span class="video__text">Фото</span>
+                    </button>
+                </div>
+            </form>
+        </main>
+        <aside class="sidebar" id="menu">
+            <div class="user">
+                <div class="user__info">
+                    <img src="/assets/pets/2020-10-23-pikadu/img/avatars/default.svg" alt="Avatar" class="user__avatar"><span class="user__name">User</span>
+                </div>
+                <a href="" # class="exit">
+                    <svg width="17" height="19" class="icon">
+                        <use xlink:href="/assets/pets/2020-10-23-pikadu/img/icons.svg#exit"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="data">
+                <ul class="data__list">
+                    <li class="data__item"><a href="" class="data__link">Ответы</a></li>
+                    <li class="data__item"><a href="" class="data__link">Комментарии</a></li>
+                    <li class="data__item"><a href="" class="data__link">Оценки</a></li>
+                    <li class="data__item"><a href="" class="data__link">Сохраненное</a></li>
+                    <li class="data__item"><a href="" class="data__link">Подписки</a></li>
+                    <li class="data__item"><a href="" class="data__link">Заметки</a></li>
+                    <li class="data__item"><a href="" class="data__link">Игнор-лист</a></li>
+                </ul>
+            </div>
+            <button class="publish-post">
+                <svg width="17" height="19" class="publish-post__icon">
+                    <use xlink:href="/assets/pets/2020-10-23-pikadu/img/icons.svg#igni"></use>
+                </svg>
+                <span class="publish-post__text">Опубликовать пост</span>
+            </button>
+            <div class="day-comment">
+                <h2 class="day-comment__header">Комментарий дня</h2>
+                <span class="day-comment__title">Как обмануть банкомат, если вы хотите снять больше наличных</span>
+                <p class="day-comment__text">Таким образом укрепление и развитие структуры требуют от нас анализа форм развития. Не следует, однако забывать, что реализация намеченных плановых заданий требуют от нас анализа позиций, занимаемых участниками в отношении поставленных задач. Задача организации, в особенности же консультация...</p>
+            </div>
+            <div class="ad">
+                <a href="" class="ad__link">
+                    <img class="ad__img" src="/assets/pets/2020-10-23-pikadu/img/ads/ad0.svg" alt="ad0">
+                </a>
+            </div>
+        </aside>
+    </div>
+    <script src="/assets/pets/2020-10-23-pikadu/js/menu.js"></script>
+</body>
+
+</html>
