@@ -1,3 +1,444 @@
-﻿﻿/* line 1, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.wrapper{max-width:1200px;width:90%;margin:auto}/* line 5, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.input-group{position:relative;background-color:#fff;border-radius:6px;border:1px solid #D9D9D9;display:flex;align-items:center;padding:5px 12px}/* line 14, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */._page{background-color:#E5E5E5}/* line 17, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.header{background-color:#FA8C16;padding:26px 126px 26px 120px;margin-bottom:30px;box-shadow:0px 2px 8px rgba(0,0,0,0.15)}/* line 22, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.header__wrapper{position:relative;display:flex;align-items:center;justify-content:left}/* line 27, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.header__logo{width:47px;height:12px}/* line 30, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.header__nav{margin-left:60px}/* line 32, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.header__menu{display:flex;align-items:center}/* line 36, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.header__menu .menu__item{margin-right:15px;list-style:none}/* line 39, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.header__menu .menu__link{text-decoration:none;color:#fff}/* line 42, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.header__search{position:absolute;right:0px;height:32px;width:237px}/* line 48, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.header__search .search__input{border:none;background:transparent;width:80%}/* line 52, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.header__search .search__button{border:none;background-color:transparent;position:absolute;right:0;width:20%;cursor:pointer}/* line 59, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.header__menutoggle{display:none;position:absolute;right:0;width:50px;display:flex;align-items:center;justify-content:space-around;background-color:transparent;border:none;cursor:pointer}/* line 70, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.header__menutoggle .icon_menu{display:none;width:50px;height:50px;fill:#fff}/* line 76, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.content{display:flex;align-items:flex-start;justify-content:space-between}/* line 80, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.content .posts{max-width:800px;margin:auto}/* line 83, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.content .post{background-color:#fff;margin-bottom:30px}/* line 87, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.content .post__body{padding:35px 36px}/* line 89, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.content .post__title{margin:0;margin-bottom:19px;padding:0;color:#262626;font-weight:600;font-size:16px;line-height:24px}/* line 97, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.content .post__text{margin:0;padding:0;margin-bottom:22px;color:#262626;font-weight:normal;font-size:14px;line-height:22px}/* line 106, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.content .post .tags .tag{margin-right:10px;text-decoration:none;color:#BFBFBF;font-weight:normal;font-size:14px;line-height:22px}/* line 113, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.content .post .tags .tag::before{content:"#"}/* line 115, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.content .post__footer{border-top:1px solid #E8E8E8;background-color:#FAFAFA;display:flex;align-items:center;justify-content:space-between;padding:21px 36px}/* line 123, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.content .post__footer .post__buttons .post__button{border:none;background-color:transparent;cursor:pointer;color:#8C8C8C;margin-right:29px}/* line 129, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.content .post__footer .post__buttons .post__button .icon{fill:#8C8C8C}/* line 131, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.content .post__footer .post__author{display:flex;align-items:center}/* line 135, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.content .post__footer .post__author .author__about{margin:0;margin-right:9px;display:flex;flex-direction:column;align-items:flex-end}/* line 141, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.content .post__footer .post__author .author__about .author__name{font-weight:normal;font-size:12px;line-height:20px;color:#8c8c8c;text-decoration:none}/* line 147, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.content .post__footer .post__author .author__about .posted__time{font-weight:normal;font-size:12px;line-height:20px;color:#bfbfbf}/* line 153, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.sidebar{margin-left:30px;width:100%}/* line 156, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.sidebar .user{padding:15px 25px;background-color:#FAFAFA;border:1px solid #E8E8E8;display:flex;align-items:center;justify-content:space-between}/* line 163, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.sidebar .user__info{display:flex;align-items:center}/* line 166, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.sidebar .user__avatar{margin-right:17px}/* line 168, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.sidebar .user__name{font-weight:600;font-size:16px;line-height:24px;color:#595959}/* line 173, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.sidebar .exit{fill:#000}/* line 176, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.data{border:1px solid #E8E8E8;border-top:none}/* line 179, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.data__list{margin:0;padding:0}/* line 182, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.data__link{text-decoration:none;line-height:22px;font-size:14px;font-weight:normal;color:#595959}/* line 188, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.data__item{list-style:none;background-color:#fff;padding:16px 48px;cursor:pointer}/* line 193, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.data__item:hover{background-color:#FFFBE6;border-right:3px solid #FAAD14}/* line 196, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.data__item:hover .data__link{color:#FAAD14}/* line 198, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.publish-post{width:100%;margin:20px 0;border:none;border-radius:4px;padding:17px 16px;background-color:#FAAD14;display:flex;align-items:bottom;cursor:pointer}/* line 208, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.publish-post__icon{fill:#fff}/* line 210, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.publish-post__text{color:#fff;line-height:24px;font-size:16px;font-weight:normal;width:100%;text-align:center}/* line 217, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.publish-post:hover{background-color:#CA9D04}/* line 220, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.day-comment{background-color:#fff;border:1px solid #E8E8E8;margin-bottom:20px}/* line 224, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.day-comment__header{margin:0;background-color:#FAFAFA;border-bottom:1px solid #e8e8e8;padding:23px 25px;color:#595959;font-size:16px;font-weight:600;line-height:24px}/* line 233, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.day-comment__title{font-weight:600;font-size:16px;line-height:24px;color:#D48806;display:block;margin:22px 25px}/* line 240, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.day-comment__text{font-weight:normal;font-size:14px;line-height:22px;color:#262626;display:block;margin:22px 25px}/* line 248, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.writepost{max-width:800px;min-width:70%;width:100%}/* line 252, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.writepost__text{background-color:#fff;border:1px solid #E8E8E8;width:90%;margin-bottom:16px;padding:23px 31px;resize:none}/* line 259, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.writepost__header{line-height:24px;font-weight:bolder;font-size:16px}/* line 263, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.writepost__header::placeholder,.writepost__header:-moz-placeholder,.writepost__header:-ms-input-placeholder,.writepost__header::-webkit-input-placeholder{color:#000}/* line 265, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.writepost__body{color:#595959;line-height:22px;font-weight:normal;font-size:14px}/* line 270, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.writepost__buttons{display:flex;align-items:center;align-content:flex-start}/* line 274, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.writepost__buttons .secondary{background:#fff;border:1px solid #FFC53D;display:flex;justify-content:space-around;align-items:center;align-content:center;width:125px;text-align:center;height:50px;border-radius:4px;margin-right:12px;color:#FFC53D;cursor:pointer}/* line 288, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.writepost__buttons .secondary__icon{fill:#FFC53D;margin-top:-6px}/* line 291, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.writepost__buttons .publish-post{max-width:370px;height:50px;margin-right:36px;cursor:pointer}/* line 299, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.ad{position:relative}/* line 301, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.ad::after{content:"Реклама";position:absolute;top:0;right:0;padding:1px 26px;color:#fff;background-color:#C4C4C4;font-weight:normal;font-size:12px;line-height:20px}/* line 312, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.ad__img{width:100%}@media (max-width: 1000px){/* line 316, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.wrapper{width:100%}/* line 318, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.sidebar{position:fixed;top:70px;right:0;width:30%;transform:translateX(100%);transition:transform .25s;background-color:#fff;padding:10px}/* line 327, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.sidebar.visible{transform:translateX(0)}/* line 329, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.content{margin-top:100px}/* line 331, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.content .posts,.content .writepost{max-width:100%;width:100%;margin:auto}/* line 335, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.writepost__text{width:100%}/* line 337, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.header{position:fixed;top:0;left:0;right:0;padding:26px 10px}/* line 343, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.header__search{right:60px}/* line 345, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.header__menutoggle{display:block}/* line 347, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.header__menutoggle .icon_menu{display:block}}@media (max-width: 730px){/* line 351, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.header{padding:10px}/* line 353, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.header__wrapper{justify-content:space-between}/* line 355, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.header__menu{display:none;width:100%;position:fixed;bottom:0;left:0;background-color:#FA8C16;height:40px;padding-left:20px}/* line 364, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.header__search{position:relative}/* line 366, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.header__menutoggle{position:static}/* line 368, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */.sidebar{width:100%}}
+﻿@charset "UTF-8";
+/* line 1, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+.wrapper {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto; }
+
+/* line 5, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+.input-group {
+  position: relative;
+  background-color: #fff;
+  border-radius: 6px;
+  border: 1px solid #D9D9D9;
+  display: flex;
+  align-items: center;
+  padding: 5px 12px; }
+
+/* line 14, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+._page {
+  background-color: #E5E5E5; }
+
+/* line 17, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+.header {
+  background-color: #FA8C16;
+  padding: 26px 126px 26px 120px;
+  margin-bottom: 30px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15); }
+  /* line 22, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+  .header__wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: left; }
+  /* line 27, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+  .header__logo {
+    width: 47px;
+    height: 12px; }
+  /* line 30, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+  .header__nav {
+    margin-left: 60px; }
+  /* line 32, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+  .header__menu {
+    display: flex;
+    align-items: center; }
+    /* line 36, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+    .header__menu .menu__item {
+      margin-right: 15px;
+      list-style: none; }
+    /* line 39, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+    .header__menu .menu__link {
+      text-decoration: none;
+      color: #fff; }
+  /* line 42, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+  .header__search {
+    position: absolute;
+    right: 0px;
+    height: 32px;
+    width: 237px; }
+    /* line 48, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+    .header__search .search__input {
+      border: none;
+      background: transparent;
+      width: 80%; }
+    /* line 52, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+    .header__search .search__button {
+      border: none;
+      background-color: transparent;
+      position: absolute;
+      right: 0;
+      width: 20%;
+      cursor: pointer; }
+  /* line 59, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+  .header__menutoggle {
+    display: none;
+    position: absolute;
+    right: 0;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: transparent;
+    border: none;
+    cursor: pointer; }
+    /* line 70, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+    .header__menutoggle .icon_menu {
+      display: none;
+      width: 50px;
+      height: 50px;
+      fill: #fff; }
+
+/* line 76, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+.content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between; }
+  /* line 80, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+  .content .posts {
+    max-width: 800px;
+    margin: auto; }
+  /* line 83, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+  .content .post {
+    background-color: #fff;
+    margin-bottom: 30px; }
+    /* line 87, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+    .content .post__body {
+      padding: 35px 36px; }
+    /* line 89, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+    .content .post__title {
+      margin: 0;
+      margin-bottom: 19px;
+      padding: 0;
+      color: #262626;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px; }
+    /* line 97, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+    .content .post__text {
+      margin: 0;
+      padding: 0;
+      margin-bottom: 22px;
+      color: #262626;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 22px; }
+    /* line 106, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+    .content .post .tags .tag {
+      margin-right: 10px;
+      text-decoration: none;
+      color: #BFBFBF;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 22px; }
+      /* line 113, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+      .content .post .tags .tag::before {
+        content: "#"; }
+    /* line 115, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+    .content .post__footer {
+      border-top: 1px solid #E8E8E8;
+      background-color: #FAFAFA;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 21px 36px; }
+      /* line 123, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+      .content .post__footer .post__buttons .post__button {
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        color: #8C8C8C;
+        margin-right: 29px; }
+        /* line 129, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+        .content .post__footer .post__buttons .post__button .icon {
+          fill: #8C8C8C; }
+      /* line 131, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+      .content .post__footer .post__author {
+        display: flex;
+        align-items: center; }
+        /* line 135, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+        .content .post__footer .post__author .author__about {
+          margin: 0;
+          margin-right: 9px;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end; }
+          /* line 141, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+          .content .post__footer .post__author .author__about .author__name {
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 20px;
+            color: #8c8c8c;
+            text-decoration: none; }
+          /* line 147, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+          .content .post__footer .post__author .author__about .posted__time {
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 20px;
+            color: #bfbfbf; }
+
+/* line 153, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+.sidebar {
+  margin-left: 30px;
+  width: 100%; }
+  /* line 156, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+  .sidebar .user {
+    padding: 15px 25px;
+    background-color: #FAFAFA;
+    border: 1px solid #E8E8E8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    /* line 163, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+    .sidebar .user__info {
+      display: flex;
+      align-items: center; }
+    /* line 166, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+    .sidebar .user__avatar {
+      margin-right: 17px; }
+    /* line 168, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+    .sidebar .user__name {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      color: #595959; }
+  /* line 173, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+  .sidebar .exit {
+    fill: #000; }
+
+/* line 176, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+.data {
+  border: 1px solid #E8E8E8;
+  border-top: none; }
+  /* line 179, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+  .data__list {
+    margin: 0;
+    padding: 0; }
+  /* line 182, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+  .data__link {
+    text-decoration: none;
+    line-height: 22px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #595959; }
+  /* line 188, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+  .data__item {
+    list-style: none;
+    background-color: #fff;
+    padding: 16px 48px;
+    cursor: pointer; }
+    /* line 193, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+    .data__item:hover {
+      background-color: #FFFBE6;
+      border-right: 3px solid #FAAD14; }
+      /* line 196, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+      .data__item:hover .data__link {
+        color: #FAAD14; }
+
+/* line 198, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+.publish-post {
+  width: 100%;
+  margin: 20px 0;
+  border: none;
+  border-radius: 4px;
+  padding: 17px 16px;
+  background-color: #FAAD14;
+  display: flex;
+  align-items: bottom;
+  cursor: pointer; }
+  /* line 208, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+  .publish-post__icon {
+    fill: #fff; }
+  /* line 210, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+  .publish-post__text {
+    color: #fff;
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: normal;
+    width: 100%;
+    text-align: center; }
+  /* line 217, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+  .publish-post:hover {
+    background-color: #CA9D04; }
+
+/* line 220, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+.day-comment {
+  background-color: #fff;
+  border: 1px solid #E8E8E8;
+  margin-bottom: 20px; }
+  /* line 224, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+  .day-comment__header {
+    margin: 0;
+    background-color: #FAFAFA;
+    border-bottom: 1px solid #e8e8e8;
+    padding: 23px 25px;
+    color: #595959;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px; }
+  /* line 233, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+  .day-comment__title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #D48806;
+    display: block;
+    margin: 22px 25px; }
+  /* line 240, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+  .day-comment__text {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #262626;
+    display: block;
+    margin: 22px 25px; }
+
+/* line 248, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+.writepost {
+  max-width: 800px;
+  min-width: 70%;
+  width: 100%; }
+  /* line 252, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+  .writepost__text {
+    background-color: #fff;
+    border: 1px solid #E8E8E8;
+    width: 90%;
+    margin-bottom: 16px;
+    padding: 23px 31px;
+    resize: none; }
+  /* line 259, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+  .writepost__header {
+    line-height: 24px;
+    font-weight: bolder;
+    font-size: 16px; }
+    /* line 263, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+    .writepost__header::placeholder, .writepost__header:-moz-placeholder, .writepost__header:-ms-input-placeholder, .writepost__header::-webkit-input-placeholder {
+      color: #000; }
+  /* line 265, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+  .writepost__body {
+    color: #595959;
+    line-height: 22px;
+    font-weight: normal;
+    font-size: 14px; }
+  /* line 270, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+  .writepost__buttons {
+    display: flex;
+    align-items: center;
+    align-content: flex-start; }
+    /* line 274, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+    .writepost__buttons .secondary {
+      background: #fff;
+      border: 1px solid #FFC53D;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      align-content: center;
+      width: 125px;
+      text-align: center;
+      height: 50px;
+      border-radius: 4px;
+      margin-right: 12px;
+      color: #FFC53D;
+      cursor: pointer; }
+      /* line 288, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+      .writepost__buttons .secondary__icon {
+        fill: #FFC53D;
+        margin-top: -6px; }
+    /* line 291, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+    .writepost__buttons .publish-post {
+      max-width: 370px;
+      height: 50px;
+      margin-right: 36px;
+      cursor: pointer; }
+
+/* line 299, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+.ad {
+  position: relative; }
+  /* line 301, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+  .ad::after {
+    content: "Реклама";
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1px 26px;
+    color: #fff;
+    background-color: #C4C4C4;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px; }
+  /* line 312, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+  .ad__img {
+    width: 100%; }
+
+@media (max-width: 1000px) {
+  /* line 316, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+  .wrapper {
+    width: 100%; }
+  /* line 318, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+  .sidebar {
+    position: fixed;
+    top: 70px;
+    right: 0;
+    width: 30%;
+    transform: translateX(100%);
+    transition: transform .25s;
+    background-color: #fff;
+    padding: 10px; }
+    /* line 327, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+    .sidebar.visible {
+      transform: translateX(0); }
+  /* line 329, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+  .content {
+    margin-top: 100px; }
+    /* line 331, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+    .content .posts, .content .writepost {
+      max-width: 100%;
+      width: 100%;
+      margin: auto; }
+  /* line 335, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+  .writepost__text {
+    width: 100%; }
+  /* line 337, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 26px 10px; }
+    /* line 343, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+    .header__search {
+      right: 60px; }
+    /* line 345, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+    .header__menutoggle {
+      display: block; }
+      /* line 347, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+      .header__menutoggle .icon_menu {
+        display: block; } }
+
+@media (max-width: 730px) {
+  /* line 351, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+  .header {
+    padding: 10px; }
+    /* line 353, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+    .header__wrapper {
+      justify-content: space-between; }
+    /* line 355, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+    .header__menu {
+      display: none;
+      width: 100%;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      background-color: #FA8C16;
+      height: 40px;
+      padding-left: 20px; }
+    /* line 364, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+    .header__search {
+      position: relative; }
+    /* line 366, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+    .header__menutoggle {
+      position: static; }
+  /* line 368, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+  .sidebar {
+    width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */
