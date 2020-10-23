@@ -5,12 +5,12 @@ sidebar_nav_entries:
     match: /
     available: true
   - pets:
-    text: Проекты
+    text: Игрушки
     url: /pets
     match: /pets.html
     available: true
   - cases:
-    text: Кейсы
+    text: Проекты
     url: /cases
     match: /cases.html
     available: true
