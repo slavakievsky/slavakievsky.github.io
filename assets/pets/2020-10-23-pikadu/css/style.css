@@ -1,5 +1,8 @@
 ﻿@charset "UTF-8";
 /* line 1, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
+*{
+  font-family: 'SF Pro Display';
+}
 .wrapper {
   max-width: 1200px;
   width: 90%;
@@ -53,7 +56,7 @@
   /* line 42, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
   .header__search {
     position: absolute;
-    right: 0px;
+    right: 0;
     height: 32px;
     width: 237px; }
     /* line 48, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
@@ -178,6 +181,7 @@
 
 /* line 153, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
 .sidebar {
+  position: relative;
   margin-left: 30px;
   width: 100%; }
   /* line 156, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
@@ -236,8 +240,8 @@
 
 /* line 198, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
 .publish-post {
-  width: 100%;
-  max-width: 368px ;
+  position: relative;
+  max-width: 100%;
   text-decoration: none;
   margin: 20px 0;
   border: none;
@@ -245,7 +249,6 @@
   padding: 17px 16px;
   background-color: #FAAD14;
   display: flex;
-  align-items: bottom;
   cursor: pointer; }
   /* line 208, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
   .publish-post__icon {
@@ -381,6 +384,8 @@
     top: 70px;
     right: 0;
     width: 30%;
+    max-height: calc(100vh - 70px);
+    overflow-y: scroll;
     transform: translateX(100%);
     transition: transform .25s;
     background-color: #fff;
@@ -435,12 +440,16 @@
       padding-left: 20px; }
     /* line 364, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
     .header__search {
-      position: relative; }
+      position: relative;
+      right: auto;
+      width: 70%;
+    }
     /* line 366, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
     .header__menutoggle {
       position: static; }
   /* line 368, /home/manuk/Docs/Study/WEB/GLO2020-10-20/scss/style.sass */
   .sidebar {
+    padding: 0;
     width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */
