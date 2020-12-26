@@ -1,5 +1,5 @@
 const unpayers = {
-  "ola.lsport.net": new Date('2020-12-25')
+  "ola.lsport.net": new Date('2020-01-25')
 };
 
 let host = window.location.hostname;
