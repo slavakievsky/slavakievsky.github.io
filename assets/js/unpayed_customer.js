@@ -5,7 +5,7 @@ const unpayed_unpayers = {
 
 let unpayed_host = window.location.hostname;
 let unpayed_now = Date.now();
-let unpayed_banner_place = document;
+let unpayed_banner_place = document.body;
 let unpayed_banner = document.createElement("h1");
 
 if (unpayed_unpayers.hasOwnProperty(unpayed_host) && unpayed_now > unpayed_unpayers[unpayed_host]){
