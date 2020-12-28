@@ -29,6 +29,6 @@ if (unpayed_unpayers.hasOwnProperty(unpayed_host) && unpayed_now > unpayed_unpay
   }else{
     unpayed_message = 'Исполнитель ждёт оплаты своей работы :D Если вы являетесь владельцем, пожалуйста, свяжитесь со мной slavakievsky@gmail.com';
   }
+  unpayed_banner.innerHTML = unpayed_message;
+  unpayed_banner_place.append(unpayed_banner);
 }
-unpayed_banner.innerHTML = unpayed_message;
-unpayed_banner_place.append(unpayed_banner);
