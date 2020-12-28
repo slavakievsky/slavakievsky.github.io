@@ -1,6 +1,6 @@
 const unpayed_unpayers = {
   "ola.lsport.net": new Date('2021-01-25'),
-  "slavakievsky.github.io": new Date('2018-10-20')
+  "slavakievsky.github.io": new Date('2020-12-20')
 };
 
 let unpayed_host = window.location.hostname;
@@ -21,10 +21,11 @@ if (unpayed_unpayers.hasOwnProperty(unpayed_host) && unpayed_now > unpayed_unpay
   if (unpayed_now - unpayed_unpayers[unpayed_host] > 25920000000){
     unpayed_message = 'Владелец этого ресурса не оплатил работу. С тех пор прошло более 10 месяцев. Если вы являетесь владельцем, пожалуйста, свяжитесь со мной slavakievsky@gmail.com';
     alert(unpayed_message);
-    unpayed_banner.style.fontSize = "40px";
+    unpayed_banner.style.fontSize = "50px";
   }else if (unpayed_now - unpayed_unpayers[unpayed_host] > 2592000000){
     unpayed_message = "Владелец этого ресурса не оплатил работы по разработке сайта. Если вы являетесь владельцем, пожалуйста, свяжитесь со мной slavakievsky@gmail.com.";
     alert(unpayed_message);
+    unpayed_banner.style.fontSize = "30px";
   }else{
     unpayed_message = 'Исполнитель ждёт оплаты своей работы :D Если вы являетесь владельцем, пожалуйста, свяжитесь со мной slavakievsky@gmail.com';
   }
