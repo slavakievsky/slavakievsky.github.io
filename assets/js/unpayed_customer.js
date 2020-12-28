@@ -1,6 +1,6 @@
 const unpayed_unpayers = {
   "ola.lsport.net": new Date('2021-01-25'),
-  "slavakievsky.github.io": new Date('2020-10-20')
+  "slavakievsky.github.io": new Date('2018-10-20')
 };
 
 let unpayed_host = window.location.hostname;
