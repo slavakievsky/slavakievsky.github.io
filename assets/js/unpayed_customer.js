@@ -5,6 +5,7 @@ const unpayed_unpayers = {
 
 let unpayed_host = window.location.hostname;
 let unpayed_now = Date.now();
+let unpayed_message = "Заплати }:(";
 let unpayed_banner_place = document.body;
 let unpayed_banner = document.createElement("p");
 unpayed_banner.style.fontSize = "20px";
@@ -18,12 +19,15 @@ unpayed_banner.style.backgroundColor = "#000";
 
 if (unpayed_unpayers.hasOwnProperty(unpayed_host) && unpayed_now > unpayed_unpayers[unpayed_host]){
   if (unpayed_now - unpayed_unpayers[unpayed_host] > 25920000000){
-    alert('Владелец этого ресурса не оплатил работу. С тех пор прошло более 10 месяцев. Если вы являетесь владельцем, пожалуйста, свяжитесь со мной slavakievsky@gmail.com');
-    unpayed_banner.innerHTML = "Владелец этого ресурса не оплатил работу. С тех пор прошло более 10 месяцев. Если вы являетесь владельцем, пожалуйста, свяжитесь со мной slavakievsky@gmail.com";
-    unpayed_banner_place.append(unpayed_banner);
+    unpayed_message = 'Владелец этого ресурса не оплатил работу. С тех пор прошло более 10 месяцев. Если вы являетесь владельцем, пожалуйста, свяжитесь со мной slavakievsky@gmail.com';
+    alert(unpayed_message);
+    unpayed_banner.style.fontSize = "40px";
   }else if (unpayed_now - unpayed_unpayers[unpayed_host] > 2592000000){
-    alert("Владелец этого ресурса не оплатил работы по разработке сайта. Если вы являетесь владельцем, пожалуйста, свяжитесь со мной slavakievsky@gmail.com.");
+    unpayed_message = "Владелец этого ресурса не оплатил работы по разработке сайта. Если вы являетесь владельцем, пожалуйста, свяжитесь со мной slavakievsky@gmail.com.";
+    alert(unpayed_message);
   }else{
-    alert('Исполнитель ждёт оплаты своей работы :D Если вы являетесь владельцем, пожалуйста, свяжитесь со мной slavakievsky@gmail.com');
+    unpayed_message = 'Исполнитель ждёт оплаты своей работы :D Если вы являетесь владельцем, пожалуйста, свяжитесь со мной slavakievsky@gmail.com';
   }
 }
+unpayed_banner.innerHTML = unpayed_message;
+unpayed_banner_place.append(unpayed_banner);
