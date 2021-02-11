@@ -1,0 +1,9 @@
+---
+layout: page
+title: Knowledge Base
+---
+<main class="knowledgebase">
+    {%- for category in site.knowledgebase-categories -%}
+        <a href="{{category.url}}">{{category.title}}</a>
+    {%- endfor -%}
+</main>
